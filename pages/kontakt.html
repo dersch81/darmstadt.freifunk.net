@@ -7,82 +7,85 @@ weight: 7
 layout: main
 ---
 
-  <link rel="stylesheet" href="{{ "/css/leaflet/leaflet.css" | prepend: site.baseurl }}"/>
+<link rel="stylesheet" href="{{ "/css/leaflet/leaflet.css" | prepend: site.baseurl }}"/>
 
-  <header>
-    <h2 class="post-title">{{ page.title }}</h2>
-    <p>Wir freuen uns, wenn du Kontakt mit uns aufnimmst, sei es persönlich bei einem unserer Treffen oder über das Internet.</p>
-  </header>
+<header>
+  <h2 class="post-title">{{ page.title }}</h2>
+  <p>Wir freuen uns, wenn du Kontakt mit uns aufnimmst, sei es persönlich bei einem unserer Treffen oder über das Internet.</p>
+</header>
 
-  <div class="row">
-    <div class="col-xs-8">
-      <div class="box">
-        <h3>Treffen</h3>
-        <p>Wir treffen uns jede Woche montags im Hackspace des <a href="https://www.chaos-darmstadt.de/">Chaos Darmstadt e.V.</a>, in der Wilhelminenstraße 17. Der Hackspace befindet sich im 3. Stock.</p>
-        <p>Die nächstgelegene Bus- und Straßenbahnhaltestelle ist der Luisenplatz. Von dort läufst Du rechts am Luisencenter vorbei die Wilhelminenstraße hoch und stehst nach etwa 150 Metern vor dem unscheinbaren Eingang auf der rechten Seite.</p>
-        <p>Wenn Du neu bei Freifunk bist, bereits einen Router einrichten möchtest oder einfach nur mehr über das Projekt erfahren willst, komm' einfach zu einem persönlichen Gespräch um <strong>18:30 Uhr</strong> vorbei. Wir freuen uns auf deinen Besuch!</p>
+<div class="row">
+  <div class="col-xs-8">
+    <div class="box">
+      <h3>Treffen</h3>
+      <p>Wir treffen uns jede Woche montags im Hackspace des <a href="https://www.chaos-darmstadt.de/">Chaos Darmstadt e.V.</a>, in der Wilhelminenstraße 17. Der Hackspace befindet sich im 3. Stock.</p>
+      <p>Die nächstgelegene Bus- und Straßenbahnhaltestelle ist der Luisenplatz. Von dort läufst Du rechts am Luisencenter vorbei die Wilhelminenstraße hoch und stehst nach etwa 150 Metern vor dem unscheinbaren Eingang auf der rechten Seite.</p>
+      <p>Wenn Du neu bei Freifunk bist, bereits einen Router einrichten möchtest oder einfach nur mehr über das Projekt erfahren willst, komm' einfach zu einem persönlichen Gespräch um <strong>18:30 Uhr</strong> vorbei. Wir freuen uns auf deinen Besuch!</p>
 
-        <p>Immer am 1. und 3. Montag jedes Monats um <strong>19:30 Uhr</strong> findet unser Plenum statt, in dem wir aktuelle Entwicklungen diskutieren und unser weiteres Vorgehen koordinieren.
+      <p>Immer am 1. und 3. Montag jedes Monats um <strong>19:30 Uhr</strong> findet unser Plenum statt, in dem wir aktuelle Entwicklungen diskutieren und unser weiteres Vorgehen koordinieren.
 
-        <h4>Anfahrt</h4>
-        <ul>
-          <li><strong>ÖPNV:</strong> Haltestelle Luisenplatz. Verbindungsauskunft auf der Seite des <a href="http://www.rmv.de/">RMV</a>.</li>
-          <li><strong>PKW:</strong> Leider haben wir <strong>keine Parkplätze</strong>. Wir empfehlen das Auto in einem <a href="http://www.parkopedia.de/parken/darmstadt/">Parkhaus</a> abzustellen.</li>
-        </ul>
+      <h4>Anfahrt</h4>
+      <ul>
+        <li><strong>ÖPNV:</strong> Haltestellen Kahlertstraße, Willy-Brandt-Platz und Pallaswiesenstraße. Verbindungsauskunft auf der Seite des <a href="http://www.rmv.de/">RMV</a>.</li>
+        <li><strong>PKW:</strong> Aufgrund der angespannten Parkplatzsituation im Johannesviertel empfehlen wir das Auto in einem <a href="http://www.parkopedia.de/parken/darmstadt/">Parkhaus</a> abzustellen.</li>
+      </ul>
+      <p>Fahrräder können im Innenhof abgestellt werden.</p>
 
-        <p>Fahrräder können vor dem Gebäude abgestellt werden.</p>
-
-        <h3>Kontaktdaten</h3>
-        <p>Wenn es dir nicht möglich ist, uns zu besuchen, dann gibt es natürlich noch alternative Kontaktwege:</p>
-        <ul>
-          <li><a href="mailto:{{site.email}}">Email ({{site.email}})</a></li>
-          <li><a href="http://www.twitter.com/{{site.twitter_username}}">Twitter (@{{site.twitter_username}})</a></li>
-          <li><a href="http://www.facebook.com/freifunkDA">Facebook</a></li>
-          <li><a href="https://plus.google.com/113942916935529162777/">Google+</a></li>
-          <li><a href="http://lists.freifunk.net/mailman/listinfo/darmstadt-freifunk.net">Mailing-Liste</a></li>
-          <li><a href="https://chat.darmstadt.freifunk.net">Chat</a> (oder mit IRC-Client <a href="irc://irc.hackint.eu/ffda">irc://irc.hackint.eu/ffda</a>)</li>
-          <li>Anrufbeantworter: <a href="tel:+49-6151-6294552">06151 / 6294552</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="col-xs-4">
-      <div class="box">
-        <h3>Nächstes Treffen</h3>
-        <p>Unser nächstes Treffen findet am <strong><span id="next_meet_date">n&auml;chsten Montag</span></strong> um <strong>18:30</strong> Uhr statt.</p>
-      </div>
-
-      <div id="map" class="box" style="height: 40em;"></div>
+      <h3>Kontaktdaten</h3>
+      <p>Wenn es dir nicht möglich ist uns zu besuchen, dann gibt es natürlich noch alternative Kontaktwege:</p>
+      <ul>
+        <li><a href="mailto:{{site.email}}">Email ({{site.email}})</a></li>
+        <li><a href="http://www.twitter.com/{{site.twitter_username}}">Twitter (@{{site.twitter_username}})</a></li>
+        <li><a href="http://www.facebook.com/freifunkDA">Facebook</a></li>
+        <li><a href="https://plus.google.com/113942916935529162777/">Google+</a></li>
+        <li><a href="http://lists.freifunk.net/mailman/listinfo/darmstadt-freifunk.net">Mailing-Liste</a></li>
+        <li><a href="https://chat.darmstadt.freifunk.net">Chat</a> (oder mit IRC-Client <a href="irc://irc.hackint.eu/ffda">irc://irc.hackint.eu/ffda</a>)</li>
+        <li>Anrufbeantworter: <a href="tel:+49-6151-6294552">06151 / 6294552</a></li>
+      </ul>
     </div>
   </div>
 
-  <script src="{{ "/js/moment-with-locales.js" | prepend: site.baseurl }}">
-  </script>
-  <script>
-    $(document).ready(function() {
-      moment.locale('de');
-      var nextDate;
-      if (moment().isSame(moment().weekday(0), 'day'))
-          nextDate = moment().weekday(0);
-      else
-          nextDate = moment().weekday(7);
+  <div class="col-xs-4">
+    <div class="box">
+      <h3>Nächstes Treffen</h3>
+      <p>Unser nächstes Treffen findet am <strong><span id="next_meet_date">n&auml;chsten Montag</span></strong> um <strong>18:30</strong> Uhr statt.</p>
+    </div>
 
-      $('#next_meet_date').text(nextDate.format('D. MMMM'));
-    });
-  </script>
-  <script src="{{ "/js/leaflet.js" | prepend: site.baseurl }}"></script>
-  <script>
-    function mapinit() {
-      var map = L.map('map').setView([49.87921245300291, 8.645183444023132], 14);
-      L.Icon.Default.imagePath = '../images';
+    <div id="map" class="box" style="height: 40em;"></div>
+  </div>
 
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-      }).addTo(map);
+</div>
 
-      L.marker([49.87921245300291, 8.645183444023132]).addTo(map);
-    }
-    $(document).ready(function() {
-      mapinit();
-    });
-  </script>
+<script src="{{ "/js/moment-with-locales.js" | prepend: site.baseurl }}">
+</script>
+
+<script>
+  $(document).ready(function() {
+    moment.locale('de');
+    var nextDate;
+    if (moment().isSame(moment().weekday(0), 'day'))
+        nextDate = moment().weekday(0);
+    else
+        nextDate = moment().weekday(7);
+
+    $('#next_meet_date').text(nextDate.format('D. MMMM'));
+  });
+</script>
+
+<script src="{{ "/js/leaflet.js" | prepend: site.baseurl }}"></script>
+
+<script>
+  function mapinit() {
+    var map = L.map('map').setView([49.87921245300291, 8.645183444023132], 14);
+    L.Icon.Default.imagePath = '../images';
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker([49.87921245300291, 8.645183444023132]).addTo(map);
+  }
+  $(document).ready(function() {
+    mapinit();
+  });
+</script>

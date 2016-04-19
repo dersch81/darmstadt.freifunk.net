@@ -1,17 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    {% include head.html %}
-  </head>
+<head>
+  {% include head.html %}
+</head>
+<body>
+  {{ content }}
 
-  <body>
-    {% include header.html %}
-
-    {{ content }}
-
-    {% if page.hide_footer == true %}
-    {% else %}
-    {% include footer.html %}
-    {% endif %}
-  </body>
+  {% if page.hide_footer == true %}
+  {% else %}
+  {% include footer.html %}
+  {% endif %}
+</body>
 </html>

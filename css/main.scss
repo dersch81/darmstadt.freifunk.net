@@ -1,0 +1,217 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@import 'colors';
+
+body {
+  background-image: url('../images/banner.jpg');
+  background-color: $color-darkgray-bg;
+  background-blend-mode: hard-light;
+}
+
+
+.freifunkdots {
+  height: 0;
+  width: 25%;
+}
+
+.mainrow {
+  a {
+    color: $color-cyan-bg;
+  }
+
+  .sidebar {
+    .logo {
+      margin: 1em 0 2em 0;
+      font-size: 1.25em;
+      max-width: 50vw;
+
+      img {
+        display: block;
+        width: 80%;
+        padding-bottom: 1em;
+      }
+    }
+
+    .logo:hover {
+      opacity: .9;
+      text-decoration: none;
+    }
+
+
+    ul {
+      padding: 0;
+    }
+
+    ul ul {
+      padding-left: 1em;
+    }
+    li {
+      list-style: none;
+      display: block;
+    }
+    a {
+      padding: .25em;
+      display: block;
+    }
+    ul a:hover {
+      text-decoration: none;
+      background: transparentize($color-yellow-bg, .9);
+      color: $color-cyan-bg-light;
+    }
+  }
+
+  .main {
+    margin-right: 2em;
+
+    .magenta {
+      background-color: $color-magenta-bg;
+      color: $color-magenta-fg-bold;
+    }
+    .cyan {
+      background-color: $color-cyan-bg;
+      color: $color-cyan-fg-bold;
+    }
+    .yellow {
+      background-color: $color-yellow-bg;
+      color: $color-yellow-fg-bold;
+    }
+    .black {
+      background-color: $color-black-bg;
+      color: $color-black-fg-bold;
+    }
+
+    header {
+      font-size: 1.25em;
+      background-image: url('../images/banner-hbi.jpg');
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      padding: .5em 4em 1em 4em;
+      margin: 0 0 2em auto;
+      color: $color-magenta-fg-bold;
+      text-align: center;
+
+      h2 {
+        color: $color-yellow-bg;
+      }
+
+      ul {
+        padding: 0;
+
+        li {
+          list-style: none;
+          display: inline-block;
+        }
+      }
+
+      .button {
+        display: inline-block;
+        padding: .5em 1em;
+        margin: .5em;
+        border-radius: .5em;
+        transition: background-color 100ms;
+      }
+      .button:hover {
+        text-decoration: none;
+      }
+
+
+      .yellow.button:hover {
+        background-color: $color-yellow-bg-light;
+      }
+      .cyan.button:hover {
+        background-color: $color-cyan-bg-light;
+      }
+      .magenta.button:hover {
+        background-color: $color-magenta-bg-light;
+      }
+    }
+
+    .box {
+      margin: 0 0 2em auto;
+      padding: 3em 4em;
+      background-color: white;
+      clear: both;
+    }
+
+    .ff-principles {
+      section {
+        margin-top: 1em;
+      }
+
+      .icon {
+        text-align: center;
+
+        i {
+          width: 2em;
+          height: 2em;
+          padding: .55em;
+          border-radius: 3em;
+          text-align: center;
+          font-size: 4em;
+        }
+      }
+    }
+
+    .mitmachen-row {
+      margin-bottom: 2em;
+
+      section {
+        background: $color-darkgray-bg;
+        padding: 0 0 .1em 0;
+
+        p {
+          padding: 1em;
+          color: $color-yellow-bg;
+        }
+
+        a {
+          display: block;
+          margin: .5em;
+          padding: .5em;
+          background-color: $color-magenta-bg;
+          color: $color-magenta-fg-bold;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    section {
+      .half-width {
+        float: right;
+        width: 50%;
+        margin: 1em 0 2em 2em;
+      }
+    }
+  }
+
+  .mainframe {
+    display: block;
+    background-color: $color-darkgray-bg-light;
+    border: none;
+    height: 90vh;
+    width: 100%;
+  }
+}
+
+footer {
+  background-color: $color-darkgray-bg;
+  padding: 3em 2em;
+
+  li {
+    list-style: none;
+
+    i {
+      width: 1em;
+    }
+
+    a:hover span {
+      color: $color-magenta-bg;
+    }
+  }
+}

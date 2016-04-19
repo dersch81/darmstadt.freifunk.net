@@ -1,0 +1,33 @@
+$color-darkgray-bg:       #333;
+$color-darkgray-bg-light: #444;
+
+// Freifunk Magenta
+$color-magenta-bg:       #dc0067;
+$color-magenta-bg-light: #f60073;
+$color-magenta-fg:       mix($color-magenta-bg, #ffffff, 25%);
+$color-magenta-fg-bold:  white;
+$color-magenta-fg-light: mix($color-magenta-bg, #ffffff, 40%);
+
+// Freifunk Yellow
+$color-yellow-bg:        #ffb400;
+$color-yellow-bg-light:  #ffbc1a;
+$color-yellow-fg:        mix($color-yellow-bg, #ffffff, 25%);
+$color-yellow-fg-bold:   black;
+$color-yellow-fg-light:  mix($color-yellow-bg, #ffffff, 40%);
+
+// Freifunk Cyan
+$color-cyan-bg:          #009ee0;
+$color-cyan-bg-light:    #00b0fa;
+$color-cyan-fg:          mix($color-cyan-bg, #ffffff, 25%);
+$color-cyan-fg-bold:     black;
+$color-cyan-fg-light:    mix($color-cyan-bg, #ffffff, 40%);
+
+$color-gray-bg:          #666;
+$color-gray-fg:          mix($color-gray-bg, #ffffff, 25%);
+$color-gray-fg-bold:     black;
+$color-gray-fg-light:    mix($color-gray-bg, #ffffff, 40%);
+
+$color-black-bg:         #111111;
+$color-black-fg:         mix($color-black-bg, #ffffff, 25%);
+$color-black-fg-bold:    #ffffff;
+$color-black-fg-light:   mix($color-black-bg, #ffffff, 40%);

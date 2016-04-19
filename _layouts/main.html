@@ -2,6 +2,18 @@
 layout: base
 ---
 
-<section id="main" class="container">
-{{ content }}
-</section>
+<div class="container-fluid">
+  <div class="row mainrow">
+    <div class="freifunkdots">
+
+    </div>
+    <div class="sidebar col-md-2 col-sm-4 col-xs-12">
+      {% include sidebar.html %}
+    </div>
+    <section class="col-md-10 col-sm-8 col-xs-12">
+      <div class="main">
+        {{ content }}
+      </div
+    </section>
+  </div>
+</div>

@@ -4,46 +4,19 @@ permalink: /kontakt/
 top_url: /kontakt/
 main_menu: true
 weight: 7
-layout:
+layout: main
 ---
 
-<!DOCTYPE html>
-<html>
-<head>
-  {% include head.html %}
-  <script src="{{ "/js/eyecandy.js" | prepend: site.baseurl }}"></script>
-  <script src="{{ "/js/TweenMax.min.js" | prepend: site.baseurl }}"></script>
-  <script src="{{ "/js/moment-with-locales.min.js" | prepend: site.baseurl }}"></script>
+  <link rel="stylesheet" href="{{ "/css/leaflet/leaflet.css" | prepend: site.baseurl }}"/>
 
-  <!-- map foo -->
-  <link rel="stylesheet" href="{{ "/css/leaflet.css" | prepend: site.baseurl }}"/>
-  <script src="{{ "/js/leaflet.js" | prepend: site.baseurl }}"></script>
-  <script>
-    function mapinit() {
-      var map = L.map('map').setView([49.8708289, 8.6511757], 16);
-      L.Icon.Default.imagePath = '../images';
-
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-      }).addTo(map);
-
-      L.marker([49.8708289, 8.6511757]).addTo(map);
-    }
-  </script>
-</head>
-
-<body onLoad="mapinit();">
-  {% include header.html %}
-  <section id="main" class="container">
   <header>
     <h2 class="post-title">{{ page.title }}</h2>
+    <p>Wir freuen uns, wenn du Kontakt mit uns aufnimmst, sei es persönlich bei einem unserer Treffen oder über das Internet.</p>
   </header>
 
-  <p style="text-align:center">Wir freuen uns, wenn du Kontakt mit uns aufnimmst, sei es persönlich bei einem unserer Treffen oder über das Internet.</p>
-
   <div class="row">
-    <div class="8u 12u(3)">
-      <div class="box" id="treffen">
+    <div class="col-xs-8">
+      <div class="box">
         <h3>Treffen</h3>
         <p>Wir treffen uns jede Woche montags im Hackspace des <a href="https://www.chaos-darmstadt.de/">Chaos Darmstadt e.V.</a>, in der Wilhelminenstraße 17. Der Hackspace befindet sich im 3. Stock.</p>
         <p>Die nächstgelegene Bus- und Straßenbahnhaltestelle ist der Luisenplatz. Von dort läufst Du rechts am Luisencenter vorbei die Wilhelminenstraße hoch und stehst nach etwa 150 Metern vor dem unscheinbaren Eingang auf der rechten Seite.</p>
@@ -56,11 +29,24 @@ layout:
           <li><strong>ÖPNV:</strong> Haltestelle Luisenplatz. Verbindungsauskunft auf der Seite des <a href="http://www.rmv.de/">RMV</a>.</li>
           <li><strong>PKW:</strong> Leider haben wir <strong>keine Parkplätze</strong>. Wir empfehlen das Auto in einem <a href="http://www.parkopedia.de/parken/darmstadt/">Parkhaus</a> abzustellen.</li>
         </ul>
+
         <p>Fahrräder können vor dem Gebäude abgestellt werden.</p>
+
+        <h3>Kontaktdaten</h3>
+        <p>Wenn es dir nicht möglich ist, uns zu besuchen, dann gibt es natürlich noch alternative Kontaktwege:</p>
+        <ul>
+          <li><a href="mailto:{{site.email}}">Email ({{site.email}})</a></li>
+          <li><a href="http://www.twitter.com/{{site.twitter_username}}">Twitter (@{{site.twitter_username}})</a></li>
+          <li><a href="http://www.facebook.com/freifunkDA">Facebook</a></li>
+          <li><a href="https://plus.google.com/113942916935529162777/">Google+</a></li>
+          <li><a href="http://lists.freifunk.net/mailman/listinfo/darmstadt-freifunk.net">Mailing-Liste</a></li>
+          <li><a href="https://chat.darmstadt.freifunk.net">Chat</a> (oder mit IRC-Client <a href="irc://irc.hackint.eu/ffda">irc://irc.hackint.eu/ffda</a>)</li>
+          <li>Anrufbeantworter: <a href="tel:+49-6151-6294552">06151 / 6294552</a></li>
+        </ul>
       </div>
     </div>
 
-    <div class="4u 12u(3)">
+    <div class="col-xs-4">
       <div class="box">
         <h3>Nächstes Treffen</h3>
         <p>Unser nächstes Treffen findet am <strong><span id="next_meet_date">n&auml;chsten Montag</span></strong> um <strong>18:30</strong> Uhr statt.</p>
@@ -70,23 +56,10 @@ layout:
     </div>
   </div>
 
-  <div class="box">
-    <h3>Kontaktdaten</h3>
-    <p>Wenn es dir nicht möglich ist uns zu besuchen, dann gibt es natürlich noch alternative Kontaktwege:</p>
-    <ul>
-      <li><a href="mailto:{{site.community_email}}">Knoteneinrichtung, Treffen, Community-Bezug: ({{site.community_email}})</a></li>
-      <li><a href="mailto:{{site.email}}">Allgemeiner Kontaktweg: ({{site.email}})</a></li>
-      <li><a href="http://www.twitter.com/{{site.twitter_username}}">Twitter (@{{site.twitter_username}})</a></li>
-      <li><a href="http://www.facebook.com/freifunkDA">Facebook</a></li>
-      <li><a href="https://plus.google.com/113942916935529162777/">Google+</a></li>
-      <li><a href="http://lists.freifunk.net/mailman/listinfo/darmstadt-freifunk.net">Mailing-Liste</a></li>
-      <li><a href="https://chat.darmstadt.freifunk.net">Chat</a> (oder mit IRC-Client <a href="irc://irc.hackint.eu/ffda">irc://irc.hackint.eu/ffda</a>)</li>
-      <li>Anrufbeantworter: <a href="tel:+49-6151-6294552">06151 / 6294552</a></li>
-    </ul>
-  </div>
-  </section>
-
+  <script src="{{ "/js/moment-with-locales.js" | prepend: site.baseurl }}">
+  </script>
   <script>
+    $(document).ready(function() {
       moment.locale('de');
       var nextDate;
       if (moment().isSame(moment().weekday(0), 'day'))
@@ -95,8 +68,21 @@ layout:
           nextDate = moment().weekday(7);
 
       $('#next_meet_date').text(nextDate.format('D. MMMM'));
+    });
   </script>
+  <script src="{{ "/js/leaflet.js" | prepend: site.baseurl }}"></script>
+  <script>
+    function mapinit() {
+      var map = L.map('map').setView([49.87921245300291, 8.645183444023132], 14);
+      L.Icon.Default.imagePath = '../images';
 
-  {% include footer.html %}
-</body>
-</html>
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      L.marker([49.87921245300291, 8.645183444023132]).addTo(map);
+    }
+    $(document).ready(function() {
+      mapinit();
+    });
+  </script>

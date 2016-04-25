@@ -7,8 +7,12 @@ permalink: /news/
 top_url: /news/
 ---
 
+<header>
+  <h2 class="post-title">{{ page.title }}</h2>
+</header>
+
 <div class="row">
-  <div class="col-xs-8">
+  <div class="col-md-8">
     {% for post in site.posts %}
     <div class="box">
       <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -31,7 +35,7 @@ top_url: /news/
       RSS-Feed abonnieren</a>
     </p>
   </div>
-  <div class="col-xs-4">
+  <div class="col-md-4">
     <div class="box">
       <h3>Statistik</h3>
       <p id="net_state_loading"><span class="fa fa-refresh fa-spin"></span> Lade Statusdaten</p>

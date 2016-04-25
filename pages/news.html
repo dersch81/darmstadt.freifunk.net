@@ -26,14 +26,6 @@ top_url: /news/
       </div>
     </div>
     {% endfor %}
-    <p class="rss-subscribe">
-      <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
-      <span class="fa-stack fa-sm">
-        <i class="fa fa-square-o fa-stack-2x"></i>
-        <i class="fa fa-rss fa-stack-1x"></i>
-      </span>
-      RSS-Feed abonnieren</a>
-    </p>
   </div>
   <div class="col-md-4">
     <div class="box">
@@ -70,5 +62,14 @@ top_url: /news/
         <iframe frameborder="0" marginheight="0" marginwidth="0" src="https://www.betterplace.org/de/projects/27613-freifunk-darmstadt/widget" width="160" height="260" style="text-align: center; border: 0; padding:0; margin:0;">Ihr Browser unterstützt keine Iframes. <a href="https://www.betterplace.org/projects">Online Spenden</a> auf betterplace.org</iframe>
       </div>
     </div>
+    <div class="box rss-subscribe">
+      <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+        <span class="fa-stack fa-sm">
+          <i class="fa fa-square-o fa-stack-2x"></i>
+          <i class="fa fa-rss fa-stack-1x"></i>
+        </span>
+        RSS-Feed abonnieren</a>
+      </div>
   </div>
 </div>
+<script src="../js/netstate.js"></script>

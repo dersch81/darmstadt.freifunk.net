@@ -9,11 +9,6 @@ body {
   background-color: $color-lightgray-bg-lighter;
 }
 
-.freifunkdots {
-  height: 0;
-  margin: -.5em -4em 2em -4em;
-}
-
 .mainrow {
   a {
     color: $color-magenta-bg;
@@ -127,6 +122,16 @@ body {
       }
       color: $color-magenta-fg-bold;
       text-align: center;
+
+      .freifunkdots {
+        height: 0;
+        margin: -.5em -4em 2em -4em;
+        position: relative;
+      }
+
+      section {
+        position: relative;
+      }
 
       h2 {
         color: $color-yellow-bg;

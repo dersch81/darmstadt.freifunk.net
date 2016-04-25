@@ -4,6 +4,8 @@
     var selector = '.freifunkdots';
 
     $(document).ready(function() {
+      if ($(selector).length == 0) return;
+
       if(!  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         init();
         initCanvas();

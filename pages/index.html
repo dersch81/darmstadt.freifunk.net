@@ -5,6 +5,7 @@ permalink: /
 ---
 
 <header>
+  <div class="freifunkdots"></div>
   <h2>{{ site.title }}</h2>
   <p>Wir bauen ein regionales WLAN-Netz in Darmstadt und Umgebung und bieten dabei freien Internetzugang an.</p>
 
@@ -21,7 +22,12 @@ permalink: /
   {% assign content = post.content %}
   <h2><strong class="in-line-highlight">{{post.title}}</strong></h2>
   <p>{{post.excerpt | remove: '<p>' | remove: '</p>'}} [...]</p>
-  <p><a href="news/" class="button special">Weiterlesen</a></p>
+  <p>
+    <a href="news/">
+      <i class="fa fa-chevron-right" aria-hidden="true"
+         style="margin-right: .25em;"></i>Weiterlesen
+    </a>
+  </p>
 </section>
 
 <section class="box">

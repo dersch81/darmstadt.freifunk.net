@@ -27,7 +27,7 @@
 
     function initCanvas() {
       width = $(selector).outerWidth();
-      height = $($(selector).parents()[0]).outerHeight()*1.5;
+      height = $($(selector).parents()[0]).outerHeight();
       target = {x: width/2, y: height/2};
       canvas.width = width;
       canvas.height = height;
@@ -100,8 +100,8 @@
         posx = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
         posy = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
       }
-      target.x = posx;
-      target.y = posy;
+      target.x = posx - $(selector).offset().left;
+      target.y = posy - $(selector).offset().top;
     }
 
     function scrollCheck() {

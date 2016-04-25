@@ -6,25 +6,22 @@
 @import 'colors';
 
 body {
-  background-image: url('../images/banner.jpg');
-  background-color: $color-darkgray-bg;
-  background-blend-mode: hard-light;
+  background-color: $color-lightgray-bg-lighter;
 }
-
 
 .freifunkdots {
   height: 0;
-  margin: auto -1em;
-  position: relative;
-  z-index: -10;
+  margin: -.5em -4em 2em -4em;
 }
 
 .mainrow {
   a {
-    color: $color-cyan-bg;
+    color: $color-magenta-bg;
   }
 
   .sidebar {
+    border: none;
+
     .logo {
       margin: 1em 0 2em 0;
       font-size: 1.25em;
@@ -60,14 +57,20 @@ body {
     }
     ul a:hover {
       text-decoration: none;
-      background: transparentize($color-yellow-bg, .9);
-      color: $color-cyan-bg-light;
+      background: transparentize($color-gray-bg, .9);
+      color: $color-magenta-bg-light;
     }
   }
 
   .maincol {
+    padding: 0;
+
+    @media (min-width: 768px ) {
+      padding: 0 2em;
+    }
+
     background-color: $color-lightgray-bg;
-    padding: 0 2em;
+    border-left: 1px solid $color-lightgray-bg-darker;
   }
 
   .main {
@@ -116,9 +119,12 @@ body {
       background-size: 100% auto;
       background-repeat: no-repeat;
       padding: .5em 4em 1em 4em;
-      margin: 0 0 2em auto;
+      margin: 0 0 2em 0;
       border-radius: 0 0 .5em .5em;
-      border: 1px solid $color-black-bg;
+      border: none;
+      @media (min-width: 768px ) {
+        border: 1px solid $color-black-bg;
+      }
       color: $color-magenta-fg-bold;
       text-align: center;
 
@@ -139,10 +145,20 @@ body {
     .box {
       border-radius: .5em;
       margin: 0 0 2em auto;
-      padding: 3em 4em;
       background-color: white;
-      border: 1px solid $color-lightgray-bg-darker;
+
+      padding: 2em 2em;
+      border: none;
+      @media (min-width: 768px ) {
+        padding: 3em 4em;
+        border: 1px solid $color-lightgray-bg-darker;
+      }
+
       clear: both;
+
+      img {
+        max-width: 100%;
+      }
     }
 
     .ff-principles {

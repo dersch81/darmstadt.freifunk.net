@@ -27,8 +27,9 @@ $color-gray-fg:          mix($color-gray-bg, #ffffff, 25%);
 $color-gray-fg-bold:     black;
 $color-gray-fg-light:    mix($color-gray-bg, #ffffff, 40%);
 
-$color-lightgray-bg:        #eee;
-$color-lightgray-bg-darker: #ccc;
+$color-lightgray-bg:         #eee;
+$color-lightgray-bg-darker:  #ccc;
+$color-lightgray-bg-lighter: #f8f8f8;
 
 $color-black-bg:         #111111;
 $color-black-fg:         mix($color-black-bg, #ffffff, 25%);

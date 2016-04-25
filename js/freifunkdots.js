@@ -22,19 +22,13 @@
       var canvasJq = $("<canvas />");
       $(selector).append(canvasJq);
       canvas = canvasJq[0];
-
-      width = $(selector).outerWidth();
-      height = $($(selector).parents()[0]).outerHeight();
-      target = {x: width/2, y: height/2};
-
-      canvas.width = width;
-      canvas.height = height;
       ctx = canvas.getContext('2d');
     }
 
     function initCanvas() {
       width = $(selector).outerWidth();
-      height = $($(selector).parents()[0]).outerHeight();
+      height = $($(selector).parents()[0]).outerHeight()*1.5;
+      target = {x: width/2, y: height/2};
       canvas.width = width;
       canvas.height = height;
 

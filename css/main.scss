@@ -14,7 +14,7 @@ body {
 
 .freifunkdots {
   height: 0;
-  width: 25%;
+  margin: auto -1em;
 }
 
 .mainrow {
@@ -63,8 +63,22 @@ body {
     }
   }
 
+  .maincol {
+    background-color: $color-lightgray-bg;
+    padding: 0 2em;
+  }
+
   .main {
-    margin-right: 2em;
+    .button {
+      display: inline-block;
+      padding: .5em 1em;
+      margin: .5em;
+      border-radius: .5em;
+      transition: background-color 100ms;
+    }
+    .button:hover {
+      text-decoration: none;
+    }
 
     .magenta {
       background-color: $color-magenta-bg;
@@ -81,6 +95,16 @@ body {
     .black {
       background-color: $color-black-bg;
       color: $color-black-fg-bold;
+    }
+
+    .yellow.button:hover {
+      background-color: $color-yellow-bg-light;
+    }
+    .cyan.button:hover {
+      background-color: $color-cyan-bg-light;
+    }
+    .magenta.button:hover {
+      background-color: $color-magenta-bg-light;
     }
 
     header {
@@ -105,34 +129,13 @@ body {
           display: inline-block;
         }
       }
-
-      .button {
-        display: inline-block;
-        padding: .5em 1em;
-        margin: .5em;
-        border-radius: .5em;
-        transition: background-color 100ms;
-      }
-      .button:hover {
-        text-decoration: none;
-      }
-
-
-      .yellow.button:hover {
-        background-color: $color-yellow-bg-light;
-      }
-      .cyan.button:hover {
-        background-color: $color-cyan-bg-light;
-      }
-      .magenta.button:hover {
-        background-color: $color-magenta-bg-light;
-      }
     }
 
     .box {
       margin: 0 0 2em auto;
       padding: 3em 4em;
       background-color: white;
+      border: 1px solid $color-lightgray-bg-darker;
       clear: both;
     }
 

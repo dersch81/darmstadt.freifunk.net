@@ -15,7 +15,7 @@ aufstellen.
 
 <!--*-->
 
-![Freifunk-Karte rund ums Starkenburg-Gelände](/images/2015-08-31_starkenburg.png)
+![Freifunk-Karte rund ums Starkenburg-Gelände](../images/2015-08-31_starkenburg.png)
 
 
 Ein Anfang ist gemacht. Wir sind im Feintuning, um die Router

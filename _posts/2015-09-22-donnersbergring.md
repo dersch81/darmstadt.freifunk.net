@@ -16,7 +16,7 @@ Laufe des Tages, insbesondere durch die Unterstützung des
 und Stelle gebracht und angeschlossen.
 
 <!--*-->
-![Freifunk-Karte Donnersbergring](/images/posts/2015-09-22_donnersbergring.png)
+![Freifunk-Karte Donnersbergring](../images/posts/2015-09-22_donnersbergring.png)
 
 Ein Anwohner hatte sich dazu bereit erklärt, einen Teil der Bandbreite seines
 Internetanschlusses für Freifunk zur Verfügung zu stellen. Vielen Dank dafür!

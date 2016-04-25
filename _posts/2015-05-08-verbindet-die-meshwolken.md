@@ -9,7 +9,7 @@ Helft uns, die drei Meshwolken im Martinsviertel zu vernetzen. Dafür sind Freif
 
 <!--*-->
 
-![Bild des FFDA-Netzes im Martinsviertel](/images/posts/2015-05-08_martinsviertel-mesh.png "Meshwolken im Martinsviertel")
+![Bild des FFDA-Netzes im Martinsviertel](../images/posts/2015-05-08_martinsviertel-mesh.png "Meshwolken im Martinsviertel")
 
 
 Du kennst jemanden, der zwischen den Meshes wohnt? Dann ladet sie ein, mit einem eigenen Freifunk-Router Teil der Community zu werden.

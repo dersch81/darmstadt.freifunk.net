@@ -22,3 +22,5 @@ Unsere Bankverbindung findest du auf der [Spendenseite](/mitmachen/spenden/#manu
 > Peter Löwenstein\\
 > [+49 151 58800067](tel:+4915158800067) \\
 > <em>(nur für Presseanfragen)</em>
+
+Alle weiteren Anfragen beantworten wir gerne per Mail unter <a href="mailto:{{site.email}}">{{site.email}}</a>.

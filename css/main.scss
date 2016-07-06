@@ -107,6 +107,12 @@ body {
       background-color: $color-magenta-bg-light;
     }
 
+    .form-mailinglist-subscribe {
+      input {
+        height: 2em;
+      }
+    }
+
     header {
       font-size: 1.25em;
       background-image: url('../images/banner-hbi.jpg');

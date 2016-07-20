@@ -9,6 +9,18 @@ body {
   background-color: $color-lightgray-bg-lighter;
 }
 
+.header-link {
+  font-size: 0.8em;
+  margin: 0.2em 0 0 -1.2em;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out 0.1s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
 .mainrow {
   a {
     color: $color-magenta-bg;
@@ -111,6 +123,10 @@ body {
       input {
         height: 2em;
       }
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      padding-top: .5em;
     }
 
     header {

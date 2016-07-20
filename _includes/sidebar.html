@@ -2,6 +2,7 @@
   <img src="{{ '/images/logo.png' | prepend: site.baseurl }}">
   Freifunk Darmstadt
 </a>
+<hr>
 <ul>
   {% assign nav_pages = (site.pages | where: 'main_menu', true | sort: 'weight') %}
   {% for p in nav_pages %}

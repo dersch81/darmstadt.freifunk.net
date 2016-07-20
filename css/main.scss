@@ -18,7 +18,7 @@ body {
     border: none;
 
     .logo {
-      margin: 1em 0 2em 0;
+      margin: 1em 0;
       font-size: 1.25em;
       max-width: 50vw;
 
@@ -114,7 +114,7 @@ body {
     }
 
     header {
-      font-size: 1.25em;
+      font-size: 1.125em;
       background-image: url('../images/banner-hbi.jpg');
       background-color: $color-black-bg;
       background-size: 100% auto;

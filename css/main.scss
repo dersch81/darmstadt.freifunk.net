@@ -27,6 +27,7 @@ body {
   }
 
   .sidebar {
+    overflow: auto;
     border: none;
 
     .logo {
@@ -78,6 +79,13 @@ body {
 
     background-color: $color-lightgray-bg;
     border-left: 1px solid $color-lightgray-bg-darker;
+
+    .navbar-toggle {
+      position: absolute;
+      top: 1.75em;
+      right: 0;
+      z-index: 10;
+    }
   }
 
   .main {
@@ -129,25 +137,35 @@ body {
       padding-top: .5em;
     }
 
+    @keyframes animatedBackground {
+      from { background-position: 0 0; }
+      to { background-position: 432000% 0; }
+    }
+
     header {
       font-size: 1.125em;
-      background-image: url('../images/banner-hbi.jpg');
+      background-image: url('../images/luisenplatz-panorama-360degree.jpg');
       background-color: $color-black-bg;
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-      padding: .5em 4em 1em 4em;
+      background-size: 200% 100%;
+      background-repeat: repeat-x;
+      background-position: 0px 0px;
+      animation: animatedBackground 86400s linear infinite;
+      padding: 0;
       margin: 0 0 2em 0;
       border-radius: 0 0 .5em .5em;
       border: none;
+
       @media (min-width: 768px ) {
         border: 1px solid $color-black-bg;
+        border-top: none;
       }
+
       color: $color-magenta-fg-bold;
       text-align: center;
 
       .freifunkdots {
         height: 0;
-        margin: -.5em -4em 2em -4em;
+        margin: 0;
         position: relative;
       }
 
@@ -157,9 +175,18 @@ body {
 
       h2 {
         color: $color-yellow-bg;
+        padding: .5em;
+        background-color: rgba(0, 0, 0, .5);
+      }
+
+      p {
+        background-color: rgba(0, 0, 0, .5);
+        margin: 0;
+        padding: .5em 5em;
       }
 
       ul {
+        margin-top: 1em;
         padding: 0;
 
         li {
